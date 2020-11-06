@@ -6,12 +6,11 @@ function PizzaOrder {
 */
 
 //BL for PizzaMaker
-function Pizza(orderName, toppings, sizeCost, toppingCost) {
+function Pizza(orderName) {
   this.orderName = orderName;
   this.toppings = [];
-  this.sizeCost = sizeCost; //size based on diameter of pizza?
-  this.toppingCost = toppingCost;
-  this.totalCost = sizeCost + toppingCost;
+  this.sizeCost = 0; //size based on diameter of pizza?
+  this.toppingCost = 0;
 }
 
 Pizza.prototype.toppings = function(topping) {
