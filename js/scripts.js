@@ -11,18 +11,11 @@ function Pizza (orderName) {
   this.toppings = [];
   this.sizeCost = 0;
   this.toppingCost = 0;
+  this.total = this.sizeCost + this.toppingCost;
 }
 
 Pizza.prototype.addToppings = function(topping) {
   this.toppings.push(topping);
-}
-
-Pizza.prototype.calcTotal = function() {
-  let total = this.sizeCost + this.toppingCost;
-  return total;
-}
-
-Pizza.prototype.toppingTotal = function () {
   let subtotal = 0;
   for (let i = 0; i < this.toppings.length; i++) {
     if (this.toppings[i] == "pepperoni" || this.toppings[i] == "sausage") {
@@ -34,18 +27,21 @@ Pizza.prototype.toppingTotal = function () {
   return this.toppingCost = subtotal;
 }
 
-Pizza.prototype.pizzaCost = function(pizza) {
-  let price = 0;
-  if (pizza.size = 30) {
-    price += 15;
-  } else if (pizza.size = 45) {
-    price += 18;
-  } else {
-    price += 21;
-  }
-  this.sizeCost += price;
-}
 
+Pizza.prototype.sizeTotal = function(diameter) {
+  if (diameter == 30) {
+    this.sizeCost = 10;
+  } else if (diameter == 45) {
+    this.sizeCost = 15;
+  } else {
+    this.sizeCost = 20;
+  }; 
+};
+
+Pizza.prototype.calcTotal = function() {
+  let total = this.sizeCost + this.toppingCost;
+  return total;
+}
 
 //UI logic
 let order1 = new Pizza();
