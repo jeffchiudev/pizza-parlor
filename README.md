@@ -32,6 +32,8 @@ _3. In the directory where you've cloned the repository, open in Visual Studio C
 
 ## Test Specifications:
 
+User story: Jeff enteres an order for a 45 cm diamter (medium) pizza with sausage, goat cheese and mushrooms; medium pizzas cost 18 dollars, meat toppings cost an additional 2$ and all other toppings $1. 
+
 | Test | Input | Output |
 | :----------- | :----------------------| :----------- |
 | PizzaMaker |||
