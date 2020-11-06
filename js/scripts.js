@@ -6,21 +6,32 @@ function PizzaOrder {
 */
 
 //BL for PizzaMaker
-function Pizza(orderName) {
+function Pizza (orderName) {
   this.orderName = orderName;
   this.toppings = [];
-  this.sizeCost = 0; //size based on diameter of pizza?
+  this.sizeCost = 0;
   this.toppingCost = 0;
 }
 
-Pizza.prototype.toppings = function(topping) {
+Pizza.prototype.addToppings = function(topping) {
   this.toppings.push(topping);
 }
 
-Pizza.prototype.toppingCost = function(pizzaArray) {
-  for (let i=0; i <= pizzaArray.toppings.length; i++) {
+Pizza.prototype.calcTotal = function() {
+  let total = this.sizeCost + this.toppingCost;
+  return total;
+}
 
+Pizza.prototype.toppingTotal = function () {
+  let subtotal = 0;
+  for (let i = 0; i < this.toppings.length; i++) {
+    if (this.toppings[i] == "pepperoni" || this.toppings[i] == "sausage") {
+      subtotal += 2;
+    }  else {
+      subtotal += 1;
+    }
   }
+  return this.toppingCost = subtotal;
 }
 
 Pizza.prototype.pizzaCost = function(pizza) {

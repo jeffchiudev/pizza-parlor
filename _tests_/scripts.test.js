@@ -11,9 +11,9 @@ Expect: result.toEqual("large");
 //Expect: result.toEqual(["sausage"]);
 
 Describe: PizzaMaker.prototype.pizzaCost();
-Test: should correctly tabulate pizza order cost depending on size & toppings 
-Code: let jeffOrder = {"large", [sausage, goat cheese]}
-Expect: result.toEqual("$13");
+//Test: should correctly tabulate pizza cost depending on toppings 
+//Code: let jeffOrder.toppings = {sausage, goat cheese]}
+//Expect: result.toEqual("$3");
 
 Describe: PizzaMaker.prototype.
 Test:
