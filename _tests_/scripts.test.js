@@ -6,8 +6,9 @@ Describe: PizzaMaker
 Test: should correctly allow user to pick pizza size 
 Expect: result.toEqual("large");
 
-Test: should correctly allow user to pick toppings
-Expect: result.toEqual("sausage", "goat cheese");
+//Test: should correctly allow user to pick toppings
+//Code: order1.addToppings("sausage")
+//Expect: result.toEqual(["sausage"]);
 
 Describe: PizzaMaker.prototype.pizzaCost();
 Test: should correctly tabulate pizza order cost depending on size & toppings 

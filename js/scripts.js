@@ -36,11 +36,11 @@ Pizza.prototype.pizzaCost = function(pizza) {
   this.sizeCost += price;
 }
 
-/*
+
+//UI logic
 let order1 = new Pizza();
 
 
 
-//UI logic
 //$(document).ready(function) {
 //}
