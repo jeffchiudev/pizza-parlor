@@ -6,9 +6,9 @@ function PizzaOrder {
 */
 
 //BL for PizzaMaker
-function Pizza(orderName, toppings, sizeCost, toppingCost, totalCost) {
+function Pizza(orderName, toppings, sizeCost, toppingCost) {
   this.orderName = orderName;
-  this.toppings = toppings;
+  this.toppings = [];
   this.sizeCost = sizeCost; //size based on diameter of pizza?
   this.toppingCost = toppingCost;
   this.totalCost = sizeCost + toppingCost;
