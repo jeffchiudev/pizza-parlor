@@ -1,4 +1,4 @@
-Describe: PizzaOrder
+Describe: PizzaMaker
 Test: should correctly create an object for a new pizza order 
 Code: let jeffOrder = new PizzaOrder(jeff);
 Expect: pizzaOrder.name.toEqual(jeff);

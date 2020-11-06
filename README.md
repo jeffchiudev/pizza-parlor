@@ -34,13 +34,11 @@ _3. In the directory where you've cloned the repository, open in Visual Studio C
 
 | Test | Input | Output |
 | :----------- | :----------------------| :----------- |
-| NewPizzaOrder |||
+| PizzaMaker |||
 | should correctly create new pizza order | JeffOrder | typeof Jeff = object |
-| pizzaSize |||
 | should correctly allow user to pick pizza | medium | JeffOrder.pizzaSize = medium |
-| addToppings |||
 | should correctly allow user to add toppings | sausage, goat cheese | JeffOrder.toppings [sausage, goat cheese] |
-| pizzaCost |||
+| PizzaMaker.prototype.pizzaCost |||
 | should correctly allow user to finalize order and price || JeffOrder.pizzaCost = 13$ | 
 
 
