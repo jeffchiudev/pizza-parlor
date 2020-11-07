@@ -1,0 +1,9 @@
+.jumbotron {
+  background-image: url(../images/Pizza-oven.jpg);
+  height: 300px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  text-align: right;
+  color: rgba(245, 140, 121, 0.753);
+}

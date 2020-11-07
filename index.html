@@ -14,39 +14,48 @@
 <body>
   <div class="container">
     <div class="jumbotron">
-      <h1>Pizza Parlor Point of Service</h1>
-      <p>Please input your order below</p>
+      <h1>Pizza Parlor Pizza Constructor</h1>
+      <p>Use our form to build the pizza of your dreams!</p>
     </div>
     <div>
       <form id="orderForm">
+        <h2>Order Form:</h2>
         <div class="row">
-          <h2>Order Form:</h2>
           <div class="col-md-6">
+            <h4>Please select what size pizza you woud like:</h4>
             <div class="form-group">
               <div class="radio">
                 <label>
                   <input type="radio" name="pizza-size" value="30" checked>
-                  30 cm diameter
+                  30 cm diameter (12") Great for 1 person.
                 </label>
               </div>
               <div class="radio">
                 <label>
                   <input type="radio" name="pizza-size" value="45">
-                  45 cm diameter
+                  45 cm diameter (18") Great for 2-3 persons.
                 </label>
               </div>
               <div class="radio">
                 <label>
                   <input type="radio" name="pizza-size" value="60">
-                  60 cm diameter
+                  60 cm diameter (24") Great for 4-5 persons.
                 </label>
               </div>
             </div>
-
           </div>
           <div class="col-md-6">
+            <h4>Please select your toppings:</h4>
             <div class="form-group">
-
+              <input type="checkbox" name="pizza-topping" value="cheese" checked>Cheese<br>
+              <input type="checkbox" name="pizza-topping" value="pepperoni">Pepperoni +$2<br>
+              <input type="checkbox" name="pizza-topping" value="sausage">Italian Sausage +$2<br>
+              <input type="checkbox" name="pizza-topping" value="artichoke">Artichoke Hearts +1$<br>
+              <input type="checkbox" name="pizza-topping" value="anchovie">Anchovie +$2<br>
+              <input type="checkbox" name="pizza-topping" value="goat-cheese">Goat-cheese +1$<br>
+              <input type="checkbox" name="pizza-topping" value="chorizo">Chorizo +$2<br>
+              <input type="checkbox" name="pizza-topping" value="shitake">Shitake mushrooms +1$<br>
+              <input type="checkbox" name="pizza-topping" value="banana-pepper">Banana peppers +1$<br>
             </div>
           </div>
         </div>
