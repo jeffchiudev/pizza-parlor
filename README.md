@@ -36,12 +36,15 @@ User story: Jeff enteres an order for a 45 cm diamter (medium) pizza with sausag
 
 | Test | Input | Output |
 | :----------- | :----------------------| :----------- |
-| PizzaMaker |||
+| Pizza |||
 | should correctly create new pizza order | JeffOrder | typeof Jeff = object |
-| should correctly allow user to pick pizza | medium | JeffOrder.pizzaSize = medium |
+| Pizza.prototype.addToppings |||
 | should correctly allow user to add toppings | sausage, goat cheese | JeffOrder.toppings [sausage, goat cheese] |
-| PizzaMaker.prototype.pizzaCost |||
-| should correctly allow user to finalize order and price || JeffOrder.pizzaCost = 13$ | 
+| should correctly adjust pizza price with additional toppings | sausage, pepperoni, goat cheese | JeffOrder.toppingCost = 5$|
+| Pizza.prototype.sizeCost |||
+| should correctly allow user to price pizza based on size | 45cm | JeffOrder.sizeCost = $15 |
+| PizzaMaker.prototype.calcTotal |||
+| should correctly allow user to finalize order and price | sizeCost = $15, toppingCost = 5$ | JeffOrder.pizzaCost = 15$ | 
 
 
 ## Known Bugs:

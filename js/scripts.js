@@ -46,7 +46,9 @@ Pizza.prototype.calcTotal = function() {
 //UI logic
 let order1 = new Pizza();
 
-
-
-//$(document).ready(function) {
-//}
+$(document).ready(function() {
+  $("#orderForm").submit(function(event) {
+    event.preventDefault();
+    
+  });
+})
