@@ -17,7 +17,7 @@
       <h1>Pizza Parlor Pizza Constructor</h1>
       <p>Use our form to build the pizza of your dreams!</p>
     </div>
-    <div>
+    <div id="ordering">
       <form id="orderForm">
         <h2>Order Form:</h2>
         <div class="row">
@@ -47,7 +47,7 @@
           <div class="col-md-6">
             <h4>Please select your toppings:</h4>
             <div class="form-group">
-              <input type="checkbox" name="pizza-topping" value="cheese" checked>Cheese<br>
+              <input type="checkbox" name="pizza-topping" value="cheese">Extra Cheese +$1<br>
               <input type="checkbox" name="pizza-topping" value="pepperoni">Pepperoni +$2<br>
               <input type="checkbox" name="pizza-topping" value="sausage">Italian Sausage +$2<br>
               <input type="checkbox" name="pizza-topping" value="artichoke">Artichoke Hearts +1$<br>
@@ -61,8 +61,11 @@
         </div>
         <button type="submit" class="btn btn-primary">Finalize my order!</button>
       </form>
-
-
+    </div>
+    <div id="checkout">
+      <div class="order-summary">
+        <p>You've ordered a: </p>
+      </div>
     </div>
   </div>
 </body>

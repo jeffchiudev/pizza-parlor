@@ -20,7 +20,7 @@ Pizza.prototype.addToppings = function(topping) {
   for (let i = 0; i < this.toppings.length; i++) {
     if (this.toppings[i] == "pepperoni" || this.toppings[i] == "sausage" || this.toppings[i] == "anchovie" || this.toppings[i] == "chorizo") {
       subtotal += 2;
-    }  else {
+    } else {
       subtotal += 1;
     }
   }
@@ -49,6 +49,12 @@ let order1 = new Pizza();
 $(document).ready(function() {
   $("#orderForm").submit(function(event) {
     event.preventDefault();
+    let order1Diameter = $("input:radio[name=pizza-size]:checked").val();
+    let order1Toppings = [];
+    $("input:checkbox[name=pizza-topping]:checked").each(function() {
+      const pizzaTopping = $(this).val();
+      order1Toppings.push(pizzaTopping);
+    });
     
   });
 })
