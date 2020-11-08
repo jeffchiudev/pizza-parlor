@@ -18,7 +18,7 @@ Pizza.prototype.addToppings = function(topping) {
   this.toppings.push(topping);
   let subtotal = 0;
   for (let i = 0; i < this.toppings.length; i++) {
-    if (this.toppings[i] == "pepperoni" || this.toppings[i] == "sausage") {
+    if (this.toppings[i] == "pepperoni" || this.toppings[i] == "sausage" || this.toppings[i] == "anchovie" || this.toppings[i] == "chorizo") {
       subtotal += 2;
     }  else {
       subtotal += 1;

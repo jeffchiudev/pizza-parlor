@@ -21,8 +21,3 @@ Describe: PizzaMaker.prototype.calcTotal();
 //Test: should correctly tabulate pizza cost based on size of pizza
 //Code: let jeffOrder.diamter = 60cm;
 //Expect: result.toEqual("$20");
-
-Describe: PizzaMaker.prototype.
-Test:
-Code:
-Expect:
