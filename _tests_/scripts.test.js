@@ -3,10 +3,10 @@ Describe: PizzaMaker
 //Code: let jeffOrder = new PizzaOrder(jeff);
 //Expect: pizzaOrder.name.toEqual(jeff);
 
-Test: should correctly allow user to pick pizza size 
-Expect: result.toEqual("large");
+//Test: should correctly allow user to pick pizza size 
+//Expect: result.toEqual("large");
 
-Describe: PizzaMaker.prototype.addToppings();
+Describe: PizzaMaker.prototype.Toppings();
 
 //Test: should correctly allow user to pick toppings
 //Code: order1.addToppings("sausage")
