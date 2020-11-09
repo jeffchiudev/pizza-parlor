@@ -11,7 +11,7 @@ Pizza.prototype.addName = function(formName) {
   this.orderName = formName
 }
 
-Pizza.prototype.Toppings = function(toppingArray) {
+Pizza.prototype.addToppings = function(toppingArray) {
   for (let i = 0; i < toppingArray.length; i++) {
     this.toppings.push(toppingArray[i]);
   };
@@ -56,7 +56,7 @@ $(document).ready(function() {
       const pizzaTopping = $(this).val();
       order1Toppings.push(pizzaTopping);
     });
-    order1.Toppings(order1Toppings);
+    order1.addToppings(order1Toppings);
     order1.sizeTotal(order1Diameter);
     order1.calcTotal();
     $("#ordering").hide()
