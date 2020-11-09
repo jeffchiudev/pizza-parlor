@@ -38,10 +38,12 @@ User story: Jeff enteres an order for a 45 cm diamter (medium) pizza with sausag
 | :----------- | :----------------------| :----------- |
 | Pizza |||
 | should correctly create new pizza order | JeffOrder | typeof Jeff = object |
-| Pizza.prototype.addToppings |||
+| Pizza.prototype.addName |||
+| should correctly save a Order name to pizza order | "Jeff" | pizza.orderName = Jeff |
+| Pizza.prototype.Toppings |||
 | should correctly allow user to add toppings | sausage, goat cheese | JeffOrder.toppings [sausage, goat cheese] |
 | should correctly adjust pizza price with additional toppings | sausage, pepperoni, goat cheese | JeffOrder.toppingCost = 5$|
-| Pizza.prototype.sizeCost |||
+| Pizza.prototype.sizeTotal |||
 | should correctly allow user to price pizza based on size | 45cm | JeffOrder.sizeCost = $15 |
 | PizzaMaker.prototype.calcTotal |||
 | should correctly allow user to finalize order and price | sizeCost = $15, toppingCost = 5$ | JeffOrder.pizzaCost = 15$ | 
@@ -49,7 +51,7 @@ User story: Jeff enteres an order for a 45 cm diamter (medium) pizza with sausag
 
 ## Known Bugs:
 
-_Currently optimized for desktop browsing.  Smart device integration will be added soon._
+_Currently only optimized for desktop browsing._
 
 ## Support and contact details:
 
