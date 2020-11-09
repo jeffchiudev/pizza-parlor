@@ -59,8 +59,11 @@ $(document).ready(function() {
     order1.Toppings(order1Toppings);
     order1.sizeTotal(order1Diameter);
     order1.calcTotal();
-    console.log(order1);
-    $("#orderForm").hide();
+    $("#ordering").hide()
     $("#checkout").show();
+    $(".final-order-name").text();
+    $(".final-order-name").text(order1.orderName);
+    $(".final-cost").text();
+    $(".final-cost").text(order1.total);
   });
 })

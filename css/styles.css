@@ -8,6 +8,23 @@
   color: rgba(245, 140, 121, 0.753);
 }
 
+#ordering {
+  padding-bottom: 50px;
+}
+
 #checkout {
   display: none;
+  padding: 10px 20px;
+  box-sizing: border-box;
+}
+
+.order-summary p {
+  font-weight: 500;
+}
+
+body {
+  background-image: url(../images/finished-pizza.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
