@@ -23,7 +23,7 @@ Pizza.prototype.addToppings = function(toppingArray) {
       subtotal += 1;
     }
   }
-  return this.toppingCost = subtotal;
+  this.toppingCost = subtotal;
 }
 
 
@@ -39,15 +39,15 @@ Pizza.prototype.sizeTotal = function(diameter) {
 
 Pizza.prototype.calcTotal = function() {
   let sumTotal = this.sizeCost + this.toppingCost;
-  return this.total = sumTotal;
+  this.total = sumTotal;
 }
 
 //UI logic
-let order1 = new Pizza();
 
 $(document).ready(function() {
   $("#orderForm").submit(function(event) {
     event.preventDefault();
+    let order1 = new Pizza();
     let formName = $("input#orderName").val();
     order1.addName(formName);
     let order1Diameter = $("input:radio[name=pizza-size]:checked").val();
